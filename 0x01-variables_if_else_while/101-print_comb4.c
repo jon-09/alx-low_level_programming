@@ -5,6 +5,25 @@
  */
 int main(void)
 {
-	int x, y, z;
+	int x, i, z;
 
-	for int
+	for (x = 48; x <= 57; x++)
+	{
+		for (i = 48; i <= 57; i++)
+		{
+			for (z = 48; z <= 57; z++)
+			{
+				if (x < i && i < Z )
+				{
+					putchar(x);
+					putcahr(i);
+					putchar(z);
+					putchar(',');
+					putchar(' ');
+				}
+			}
+		}
+	}
+	putchar('\n');
+	return (0);
+}
