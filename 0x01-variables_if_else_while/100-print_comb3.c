@@ -9,12 +9,15 @@ int main(void)
 
 	for (x = 48; x <= 57; x++)
 	{
-		for (i = 48; x < i; i++)
+		for (i = 48; x <= 57; i++)
 		{
-			putchar(x);
-			putchar(i);
-			putchar(',');
-			putchar(' ');
+			if (x < i)
+			{
+				putchar(x);
+				putchar(i);
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
