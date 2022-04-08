@@ -20,6 +20,8 @@ int main(void)
 					putchar(' ');
 					putchar(y);
 					putchar(z);
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
