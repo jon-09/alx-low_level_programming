@@ -7,11 +7,11 @@ int main(void)
 {
 	int x, i, z;
 
-	for (x = 48; x <= 58; x++)
+	for (x = 48; x < 58; x++)
 	{
-		for (i = 49; i <= 58; i++)
+		for (i = 49; i < 58; i++)
 		{
-			for (z = 50; z <= 58; z++)
+			for (z = 50; z < 58; z++)
 			{
 				if (x < i && i < z)
 				{
