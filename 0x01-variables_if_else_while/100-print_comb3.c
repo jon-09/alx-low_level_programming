@@ -10,14 +10,14 @@ int main(void)
 
 	for (x = 48; x <= 56; x++)
 	{
-		while (i <= 57)
+		do
 		{
 			putchar(x);
 			putchar(i);
 			putchar(',');
 			putchar(' ');
 			i++;
-		}
+		}while (i <= 57); 
 	}
 	putchar('\n');
 	return (0);
