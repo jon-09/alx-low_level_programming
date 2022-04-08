@@ -5,28 +5,26 @@
  */
 int main(void)
 {
-	int i, x, y, z;
+	int i, x;
 
-	for (i = 48; i <= 57; i++)
+	for (i = 0; i < 100; i++)
 	{
-		for (x = 48; x <= 57; x++)
+		for (x = 0; x < 100; x++)
 		{
-			for (y = 48; y <= 57; y++)
+			if (i < x)
 			{
-				for (z = 48; z <= 57; z++)
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
+				putchar(' ');
+				putchar((j / 10) + 48);
+				putchar((j % 10) + 48);
+				if (i != 98 || j != 99)
 				{
-					if (y < z)
-					{
-						putchar(i);
-						putchar(x);
-						putchar(' ');
-						putchar(y);
-						putchar(z);
-						putchar(',');
-						putchar(' ');
-					}
+					putchar(',');
+					putchar(' ');
 				}
-			}
+
+			}		
 		}
 	}
 	putchar('\n');
