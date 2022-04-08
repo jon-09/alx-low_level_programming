@@ -6,9 +6,9 @@
 int main(void)
 {
 	int x = 48;
-       int i;
-       
-       while (x <= 57)
+	int i;
+	
+	while (x <= 57)
 	{
 		for (i = 48; x <= 57; i++)
 		{
@@ -20,7 +20,7 @@ int main(void)
 				putchar(' ');
 			}
 		}
-		x++
+		x++;
 	}
 	putchar('\n');
 	return (0);
