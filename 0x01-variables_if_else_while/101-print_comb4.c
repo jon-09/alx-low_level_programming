@@ -13,10 +13,10 @@ int main(void)
 		{
 			for (z = 48; z <= 57; z++)
 			{
-				if (x < i && i < Z )
+				if (x < i && i < z )
 				{
 					putchar(x);
-					putcahr(i);
+					putchar(i);
 					putchar(z);
 					putchar(',');
 					putchar(' ');
