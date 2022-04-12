@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * times_table prints tables
+ * times_table -prints tables
  * Return: always 0
  */
-void times_tables(void)
+void times_table(void)
 {
 	int a;
 	int b;
