@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * _print_sign - entry point
+ * print_sign - entry point
+ * @n: the int to print
  * Return: always 0
  */
 int print_sign(int n)
@@ -14,7 +15,7 @@ int print_sign(int n)
 	else if (n == 0)
 	{
 		_putchar('0');
-		return (0)
+		return (0);
 	}
 	else
 	{
