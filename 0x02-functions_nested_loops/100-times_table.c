@@ -12,7 +12,7 @@ void print_times_table(int n)
 	{
 		for (i = 0; i <= n; i++)
 		{
-			multiple = (i * n);
+			int multiple = (i * n);
 			printf("%d, ", multiple);
 		}
 	}
