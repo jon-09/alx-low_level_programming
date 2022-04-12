@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_times_table - entry point
  * @n: intput
@@ -6,5 +7,17 @@
  */
 void print_times_table(int n)
 {
-	return (0);
+	int i;
+	if (n <= 15 && n >= 0)
+	{
+		for (i = 0; i <= n; i++)
+		{
+			multiple = (i * n);
+			printf("%d, ", multiple);
+		}
+	}
+	else
+	{
+		printf("\n");
+	}
 }
