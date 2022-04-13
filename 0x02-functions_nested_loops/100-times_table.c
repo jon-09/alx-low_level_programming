@@ -14,7 +14,8 @@ void print_times_table(int n)
 		return;
 	while (a < n)
 	{
-		for (b = 0; b <= n; b++)
+		int x = (n + 1);
+		for (b = 0; b <= x; b++)
 		{
 			rep = a * b;
 			if (b == 0)
@@ -37,7 +38,7 @@ void print_times_table(int n)
 				_putchar('0' + (rep - 100) / 10);
 				_putchar('0' + rep % 10);
 			}
-			if (b < n)
+			if (b < x)
 			{
 				_putchar(',');
 				_putchar(' ');
