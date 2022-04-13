@@ -1,14 +1,14 @@
 #include "main.h"
 /**
- * main - entry
- * Return: Always 0;
+ * main - entry point
+ * Return: Always 0
  */
 int main(void)
 {
 	int i;
 	i = 0;
 
-	positive_or_negative(i);
+	positive_or _negative(i);
 
 	return (0);
 }
