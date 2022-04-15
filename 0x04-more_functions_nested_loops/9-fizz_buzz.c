@@ -9,15 +9,18 @@ int main(void)
 
 	for (x = 1; x <= 100; x++)
 	{
-		if ((x % 3) == 0 && (x % 5) == 0)
+		int y = x % 3;
+		int z = x % 5;
+
+		if (y == 0 && z == 0)
 		{
 			printf("FizzBuzz ");
 		}
-		else if ((x % 3) == 0)
+		else if (y == 0)
 		{
 			printf("Fizz ");
 		}
-		else if ((x % 5) == 0);
+		else if (z == 0);
 		{
 			printf("Buzz ");
 		}
