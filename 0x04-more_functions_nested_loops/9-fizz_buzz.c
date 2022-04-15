@@ -12,9 +12,9 @@ int main(void)
 		int y = x % 3;
 		int z = x % 5;
 
-		if (y == 0 && z == 0)
+		if (y != 0 || z != 0)
 		{
-			printf("FizzBuzz ");
+			printf("%d ", x);
 		}
 		else if (y == 0)
 		{
@@ -26,7 +26,7 @@ int main(void)
 		}
 		else
 		{
-			printf("%d ", x);
+			printf("FizzBuzz");
 		}
 	}
 	printf('\n');
