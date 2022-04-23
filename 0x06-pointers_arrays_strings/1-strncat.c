@@ -18,7 +18,9 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		x++;
 	}
-	while (y <= n)
+
+	/* concat src to dest with specif src size(int n) */
+	while (y < n)
 	{
 		*(dest + x) = *(src + y);
 		if (*(src + y) == '\0')
