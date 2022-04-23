@@ -10,10 +10,10 @@ int _strcmp(char *s1, char *s2)
 	char *ex = s1;
 	char *zed = s2;
 
-	while (ex != '\0' && zed != '\0' && ex == zed)
+	while (*ex != '\0' && *zed != '\0' && *ex == *zed)
 	{
 		ex++;
 		zed++;
 	}
-	return (ex - zed);
+	return (*ex - *zed);
 }
