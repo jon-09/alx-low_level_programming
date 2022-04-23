@@ -1,8 +1,9 @@
 #include "main.h"
+#include <string.h>
 /**
  * *_strcat(char *dest, char *src) - function concatenates strings.
- * @src: string to be added.
- * @dest: string to be extended.
+ * @src: string to be added - source
+ * @dest: string to be extended - destination
  * Return: dest
  */
 char *_strcat(char *dest, char *src)
@@ -11,17 +12,19 @@ char *_strcat(char *dest, char *src)
 
 	x = 0;
 	y = 0;
+	/* finding the NULL character(\0) */
 	while (*(dest + x) != '\0')
 	{
 		x++;
 	}
+	/* concat src(source) to dest with nullbyte - \0(destination) */
 	while (y >= 0)
 	{
 		*(dest + x) = *(src + y);
 		if (*(src + y) == '\0')
 				break;
-		j++;
-		i++;
+		x++;
+		y++;
 	}
 	return (dest);
 }
