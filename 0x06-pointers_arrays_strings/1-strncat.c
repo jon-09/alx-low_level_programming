@@ -13,7 +13,7 @@ char *_strncat(char *dest, char *src, int n)
 
 	x = 0;
 	y = 0;
-	
+
 	/* find the NULL byte of the dest */
 	while (*(dest + x) != '\0')
 	{
