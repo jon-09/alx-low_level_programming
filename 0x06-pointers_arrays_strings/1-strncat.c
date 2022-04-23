@@ -8,10 +8,8 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int x, y;
-
-	x = 0;
-	y = 0;
+	int x = 0;
+	int y = 0;
 
 	/* find the NULL byt of dest */
 	while (*(dest + x) != '\0')
@@ -24,7 +22,9 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		*(dest + x) = *(src + y);
 		if (*(src + y) == '\0')
+		{
 			break;
+		}
 		x++;
 		y++;
 	}
