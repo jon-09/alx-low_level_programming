@@ -3,8 +3,8 @@
  * _strncpy - function copies a string 
  * @dest: destination
  * @src: source
- * @n: size of bytes to be copied
- * Return: returns 0
+ * @n: size of bytes to be copied from src
+ * Return: returns pointer to dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
@@ -16,8 +16,7 @@ char *_strncpy(char *dest, char *src, int n)
 		{
 			dest[x] = src[x];
 		}
-		else
-			src[x] = '\0';
 	}
+	src[x] = '\0';
 	return (dest);
 }
