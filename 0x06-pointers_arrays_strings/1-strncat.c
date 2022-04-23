@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * _strncat - function concatenates string with specifi size
- * @src - pointer to source array
- * @dest - pointer to destination array
- * @n - size of the bytes to be concatenated from src
- * Return: return pointer to array dest
+ * _strncat - concatenetes two strings
+ * @dest: destination
+ * @src: source
+ * @n: size of bytes to br concatenated from src
+ * Return: the pointer of dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
