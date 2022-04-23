@@ -1,10 +1,10 @@
 #include "main.h"
 #include <string.h>
 /**
- * *_strcat(char *dest, char *src) - function concatenates strings.
+ * *_strcat - function concatenates strings.
  * @src: string to be added - source
  * @dest: string to be extended - destination
- * Return: dest
+ * Return: returns dest
  */
 char *_strcat(char *dest, char *src)
 {
@@ -12,11 +12,13 @@ char *_strcat(char *dest, char *src)
 
 	x = 0;
 	y = 0;
+
 	/* finding the NULL character(\0) */
 	while (*(dest + x) != '\0')
 	{
 		x++;
 	}
+
 	/* concat src(source) to dest with nullbyte - \0(destination) */
 	while (y >= 0)
 	{
