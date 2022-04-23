@@ -13,14 +13,10 @@ char *_strncat(char *dest, char *src, int n)
 
 	x = 0;
 	y = 0;
-
-	/* find the NULL byte of the dest*/
 	while (*(dest + x) != '\0')
 	{
 		x++;
 	}
-
-	/* concat src to dest with specif src size(int n)*/
 	while (y < n)
 	{
 		*(dest + x) = *(src + y);
