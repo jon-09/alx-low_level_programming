@@ -14,6 +14,7 @@ char *_strpbrk(char *s, char *accept)
 		if (accept[ocr] == s[ocr])
 			return (s);
 		else
-			return (0);
+			break;
 	}
+	return (0);
 }
