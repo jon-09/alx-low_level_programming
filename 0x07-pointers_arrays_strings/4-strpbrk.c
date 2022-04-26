@@ -12,7 +12,7 @@ char *_strpbrk(char *s, char *accept)
 	for (; accept[ocr] != '\0'; ocr++)
 	{
 		if (accept[ocr] == s[ocr])
-			return (*s[ocr]);
+			return (s);
 		else
 			return (0);
 	}
