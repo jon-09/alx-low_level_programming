@@ -10,7 +10,7 @@ unsigned int _strspn(char *s, char *accept)
 	int chr;
 	unsigned int byt;
 
-	for (chr = 0; accept[chr]; chr++)
+	for (chr = 0; accept[chr] != '\0'; chr++)
 	{
 		if (accept[chr] == s[chr])
 			byt++;
