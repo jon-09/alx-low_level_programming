@@ -1,9 +1,10 @@
 #include "main.h"
+
 /**
- * _strchr - function locates a character in a string
- * @s: the array containing the string
- * @c: the character to find
- * Return: returns the character if present otherwise 0
+ * _strchr - Entry point 
+ * @s: input
+ * @c: input
+ * Return: 0 when successful
  */
 char *_strchr(char *s, char c)
 {
