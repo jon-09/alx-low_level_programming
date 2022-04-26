@@ -14,6 +14,8 @@ unsigned int _strspn(char *s, char *accept)
 	{
 		if (accept[chr] == s[chr])
 			byt++;
+		if (s[chr] == '\0')
+			break;
 	}
 	return (byt);
 }
