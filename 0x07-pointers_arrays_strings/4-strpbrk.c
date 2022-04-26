@@ -13,6 +13,8 @@ char *_strpbrk(char *s, char *accept)
 	{
 		if (accept[ocr] == s[ocr])
 			return (s);
+		else if (s[ocr] == '\0')
+			break;
 		else
 			break;
 	}
