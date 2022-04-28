@@ -20,7 +20,7 @@ int _recursion(int x, int y)
 	else
 		return (_recursion(x, y + 1));
 }
-/*
+/**
  * _sqrt_recursion - function returns the squareroot
  */
 
