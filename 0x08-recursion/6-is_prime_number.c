@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 /**
  * is_prime_number - functions finds the prime number
  * @prinme: input integer
