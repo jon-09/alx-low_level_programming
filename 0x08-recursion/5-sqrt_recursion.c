@@ -1,10 +1,9 @@
 #include "main.h"
 /**
  * _recursion -functioin returns squareroot
- * @:n integer input
  * @x: interger that's equal to n
  * @y: sum of the natural number
- * Return: Always 0 when successful
+ * Return: returns the passed integer
  */
 int _recursion(int x, int y)
 {
@@ -22,6 +21,8 @@ int _recursion(int x, int y)
 }
 /**
  * _sqrt_recursion - function returns the squareroot
+ * @n: integer input
+ * Return Always 0 when successful
  */
 
 int _sqrt_recursion(int n)
