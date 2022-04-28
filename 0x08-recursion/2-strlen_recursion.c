@@ -4,7 +4,7 @@
  * @s: Pointer of string
  * Return: Always 0 when successful
  */
-int _strlen_recursion(char *s);
+int _strlen_recursion(char *s)
 {
 	int n;
 
