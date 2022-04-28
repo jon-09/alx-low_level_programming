@@ -1,12 +1,12 @@
 #include "main.h"
 /**
  * is_prime_number - functions finds the prime number
- * @prinme: input integer
+ * @n: input integer
  * Return: 1 if integer 0 otherwise
  */
 int is_prime_number(int n)
 {
-	if (n <= 1 )
+	if (n <= 1)
 		return (0);
 	else if (n == 2)
 		return (1);
