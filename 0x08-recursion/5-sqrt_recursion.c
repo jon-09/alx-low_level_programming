@@ -1,7 +1,6 @@
 #include "main.h"
 /**
  * _sqrt_recursion -functioin returns squareroot
- * _recursion - function evaluate the integer passed
  * @:n integer input
  * @x: interger that's equal to n
  * @y: sum of the natural number
@@ -21,6 +20,9 @@ int _recursion(int x, int y)
 	else
 		return (_recursion(x, y + 1));
 }
+/*
+ * _recursion - function evaluates the integer passed
+ */
 
 int _sqrt_recursion(int n)
 {
