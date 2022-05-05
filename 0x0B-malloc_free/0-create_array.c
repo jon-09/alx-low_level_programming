@@ -12,25 +12,21 @@ char *create_array(unsigned int size, char c)
 
 	/*check size being passed if null*/
 	if (size == 0)
-	{
 		return (NULL);
-	}
 
+	/*use malloc for dynamic allocation of memory*/
+	ptr = (char *) malloc(sizeof(c) * size);
+
+	if (ptr == 0)
+		return (NULL);
 	else
 	{
-		/*use malloc for dynamic allocation of memory*/
-		ptr = (char *) malloc(sizeof(c) * size);
-
-		if (ptr == 0)
-			return (NULL);
-		else
+		while (indx < size)
 		{
-			while (indx < size)
-			{
-				*(ptr + indx) = c;
-				indx++;
-			}
+			*(ptr + indx) = c;
+			indx++;
 		}
-		return (ptr);
 	}
+	return (ptr);
+
 }
