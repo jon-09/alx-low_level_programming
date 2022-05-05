@@ -20,11 +20,16 @@ char *create_array(unsigned int size, char c)
 	{
 		/*use malloc for dynamic allocation of memory*/
 		ptr = (char *) malloc(sizeof(c) * size);
-	
-		while (indx < size)
+
+		if (ptr == 0)
+			return (NULL);
+		else
 		{
-			*(ptr + indx) = c;
-			indx++;
+			while (indx < size)
+			{
+				*(ptr + indx) = c;
+				indx++;
+			}
 		}
 		return (ptr);
 	}
