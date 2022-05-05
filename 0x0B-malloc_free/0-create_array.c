@@ -19,14 +19,12 @@ char *create_array(unsigned int size, char c)
 
 	if (ptr == 0)
 		return (NULL);
-	else
-	{
-		while (indx < size)
-		{
-			*(ptr + indx) = c;
-			indx++;
-		}
-	}
-	return (ptr);
 
+	while (indx < size)
+	{
+		*(ptr + indx) = c;
+		indx++;
+	}
+
+	return (ptr);
 }
