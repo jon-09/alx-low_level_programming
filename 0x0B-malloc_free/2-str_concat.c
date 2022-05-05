@@ -33,7 +33,7 @@ char *str_concat(char *s1, char *s2)
 		s2 = "";
 
 	/*get the size of both s1 and s2*/
-	z = (_strlen(s1) + _strlen(s2) + 1);
+	z = ((_strlen(s1) + _strlen(s2)) + 1);
 
 	/*using malloc to assign memory*/
 	dest = (char *) malloc(sizeof(char) * z);
@@ -48,8 +48,8 @@ char *str_concat(char *s1, char *s2)
 
 	for (y = 0; *(s2 + y) != '\0'; y++)
 	{
- 		*(dest + y) = *(s2 + y);
-	 	x++;
+		*(dest + y) = *(s2 + y);
+		x++;
 	}
 	return (dest);
 }
