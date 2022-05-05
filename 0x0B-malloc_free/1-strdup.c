@@ -1,8 +1,9 @@
 #include "main.h"
+
 /**
  * _strlen - functions counts elements in string array
  * @s: the string array
- * return: number of elemts in s
+ * Return: number of elemts in s
  */
 
 int _strlen(char *s)
