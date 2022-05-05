@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * strlen - functions counts elements in string array
+ * _strlen - functions counts elements in string array
  * @s: the string array
  * return: number of elemts in s
  */
@@ -15,7 +15,7 @@ int _strlen(char *s)
 }
 
 /**
- * strcp - function copies str from src to dest
+ * _strcpy - function copies str from src to dest
  * @src: source of the string to be copied
  * @dest: destination to copy the string
  * Return: returns pointer to the dest
