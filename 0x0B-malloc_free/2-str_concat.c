@@ -7,9 +7,9 @@
 
 int _strlen(char *s)
 {
-        unsigned int i = 0;
+	unsigned int i = 0;
 
-        while (s[i] != '\0')
+	while (s[i] != '\0')
 		i++;
 
 	return (i);
@@ -19,7 +19,7 @@ int _strlen(char *s)
  * str_concat - function concatenates two strings
  * @s1: character input
  * @s2: character input
- * Returns: pointer to the concatenated string
+ * Return: pointer to the concatenated string
  */
 char *str_concat(char *s1, char *s2)
 {
@@ -45,10 +45,11 @@ char *str_concat(char *s1, char *s2)
 	/*concatenating s1 and s2 to malloc assigned memory; dest*/
 	for (x = 0; *(s1 + x) != '\0'; x++)
 		*(dest + x) = *(s1 + x);
+
 	for (y = 0; *(s2 + y) != '\0'; y++)
 	{
-	       *(dest + y) = *(s2 + y);
-	       x++;
+ 		*(dest + y) = *(s2 + y);
+	 	x++;
 	}
 	return (dest);
 }
