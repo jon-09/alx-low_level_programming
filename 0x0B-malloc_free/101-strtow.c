@@ -13,7 +13,7 @@ int cnt_words(char *str)
 	while (str[i] != '\0')
 	{
 		if (str[i] == ' ' || str[i] == '\n' || str[i] =='\t'
-			|| str[i] == '\f' || str[i]i == '\r'
+			|| str[i] == '\f' || str[i] == '\r'
 			|| str[i] =='\v')
 			wrd++;
 
@@ -42,7 +42,6 @@ char **strtow(char *str)
 		if (str[index] == ' ')
 		{
 			index++;
-			value++;
 			index2++;
 		}
 		else
@@ -54,3 +53,4 @@ char **strtow(char *str)
 	}
 	**arr = '\0';
 	return (arr);
+}
