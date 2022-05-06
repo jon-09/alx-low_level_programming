@@ -37,8 +37,8 @@ char *argstostr(int ac, char **av)
 			str[z] = av[x][y];
 			z++;
 		}
-		str[z] = '\n';
 		z++;
+		str[z] = '\n';
 	}
 	return (str);
 }
