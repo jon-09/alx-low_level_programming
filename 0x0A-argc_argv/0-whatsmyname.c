@@ -7,7 +7,14 @@
  */
 int main(int argc, char *argv[])
 {
-	printf("%s\n", argv[0]);
+	int c = 0;
+
+	while (c <= argc)
+	{
+		printf("%s\n", argv[0]);
+	
+		break;
+	}
 
 	return (0);
 }
