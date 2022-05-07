@@ -25,7 +25,8 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	for (indx = 0; cents[indx] != '\0'; indx++)
+	indx = 0;
+	while (cents[indx] != '\0')
 	{
 		if (count % cents[indx] < count)
 		{
@@ -38,6 +39,7 @@ int main(int argc, char *argv[])
 			printf("Error\n");
 			return (1);
 		}
+		indx++;
 	}
 
 	printf("%d\n", coins);
