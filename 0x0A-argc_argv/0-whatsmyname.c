@@ -3,9 +3,10 @@
 /**
  * main - entry point
  * @argv: the argument
+ * @argc: the count
  * Return: Always 0
  */
-int main(char *argv[])
+int main(int argc, char *argv[])
 {
 	printf("%s\n", argv[0]);
 
