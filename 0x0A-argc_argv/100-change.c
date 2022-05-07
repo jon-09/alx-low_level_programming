@@ -7,8 +7,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int index, count, chng;
-	int coins[] = {25, 10, 5, 2};
+	int count, coins, div, mod, indx;
+	int cents[] = { 25, 20, 5, 2, 1}
 
 	/*ensuring only 2 argc are passed*/
 	if (argc != 2)
@@ -25,20 +25,22 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	/*ensuring the last elemnt in array is not NULL*/
-	index = 0;
-	while(coins[index] != '\0')
+	for (indx = 0; cents[indx] != '\0'; indx++)
 	{
-		/*ensuring the count passed is not available in the coins values i.e coins[] */
-		if(count >= coins[index])
+		if (count % cents[indx] < count)
 		{
-			/*largest coin value used as change for the passed count(argc)*/
-			chng += (count / coins[index]);
-			count -= (coins[index] * (count / coins[index]));
+			div = count / cents[indx];
+			coins += div;
+			count %= cents[indx];
 		}
-		index++;
+		else
+		{
+			printf("Error\n");
+			return (1);
+		}
 	}
-	printf("%d\n", chng);
+
+	printf("%d\n", coins);
 
 	return (0);
 }
