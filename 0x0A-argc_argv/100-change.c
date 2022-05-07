@@ -30,9 +30,14 @@ int main(int argc, char *argv[])
 	{
 		if (count % cents[indx] < count)
 		{
-			div = count / cents[indx];
-			coins += div;
-			count %= cents[indx];
+			if (count != 0)
+			{
+				div = count / cents[indx];
+				coins += div;
+				count %= cents[indx];
+			}
+			else
+				break;
 		}
 		else
 		{
