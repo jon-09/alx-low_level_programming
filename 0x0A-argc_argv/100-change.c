@@ -8,7 +8,7 @@
 int main(int argc, char *argv[])
 {
 	int count, coins, div, mod, indx;
-	int cents[] = { 25, 20, 5, 2, 1}
+	int cents[] = {25, 10, 5, 2, 1}
 
 	/*ensuring only 2 argc are passed*/
 	if (argc != 2)
