@@ -7,12 +7,11 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, mul;
+	int mul;
 
 	if (argc == 3)
 	{
-		for (i = 1; i < argc; i++)
-			mul *= atoi(argv[i]);
+		mul = atoi(argv[1]) * atoi(argv[2]);
 
 		printf("%d\n", mul);
 
