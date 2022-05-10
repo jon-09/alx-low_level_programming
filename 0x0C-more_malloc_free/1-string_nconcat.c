@@ -6,7 +6,7 @@
  * @n: number of bytes to be concated
  * Return: pointer to the new string
  */
-char *string_nconcat(char *s1, char *s2, unsigned int n);
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int sz1, sz2, indx;
 	char *ptr;
@@ -22,7 +22,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n);
 		sz1++;
 
 	sz2 = 0;
-	while (s2[sz2] != '\0)
+	while (s2[sz2] != '\0')
 		sz2++;
 
 	if (n > sz2)
@@ -32,13 +32,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n);
 	if (ptr == NULL)
 		return (0);
 
-	for (indx = 0; indx <sz1; indx++)
-		ptr[indx] = sz1[indx];
+	for (indx = 0; indx < sz1; indx++)
+		ptr[indx] = s1[indx];
 
 	for (; indx < (sz1 + n); indx++)
-		ptr[indx] = sz2(indx - sz1);
+		ptr[indx] = s2[indx - sz1];
 
-	p[indx] = '\0';
+	ptr[indx] = '\0';
 
-	return[ptr];
+	return (ptr);
 }
