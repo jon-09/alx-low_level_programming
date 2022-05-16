@@ -1,6 +1,6 @@
 #include "function_pointers.h"
 /**
- * print_name- function prints the name passed
+ * print_name - function prints the name passed
  * @name: character input
  * @f: point to function f
  * Return: void
