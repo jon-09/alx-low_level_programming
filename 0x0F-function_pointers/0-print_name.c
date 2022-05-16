@@ -2,7 +2,7 @@
 /**
  * print_name - function prints the name passed
  * @name: character input
- * @f: point to function f
+ * @f: point to function the function
  * Return: void
  */
 void print_name(char *name, void (*f)(char *))
