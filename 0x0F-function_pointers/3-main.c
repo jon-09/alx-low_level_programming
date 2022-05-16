@@ -5,7 +5,7 @@
  * @argv: array of arguements
  * Return: Always 0
  */
-int main(int argc, char *argv)
+int main(int argc, char **argv)
 {
 	int n, m;
 	char opr;
@@ -29,7 +29,7 @@ int main(int argc, char *argv)
 	}
 
 	opr = *argv[2];
-	if (opr == '/' || opr == '%' && m == 0)
+	if (m == 0 && (opr =='/' || opr == '%'))
 	{
 		printf("Error\n");
 		exit(100);
