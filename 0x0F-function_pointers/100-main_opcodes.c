@@ -1,4 +1,4 @@
-#include "function_pointers"
+#include "function_pointers.h"
 
 /**
  * main - function prints its own opcodes
@@ -24,15 +24,15 @@ int main(int argc, char **argv)
 		exit(2);
 	}
 
-	arr = (char *)main;
-	for (i = 0;; i < sze; i++)
+	array = (char *)main;
+	for (i = 0; i < sze; i++)
 	{
 		if (i == sze - 1)
 		{
-			printf("%02hhx\n", arr[i]);
+			printf("%02hhx\n", array[i]);
 			break;
 		}
-		printf("02hhx\n ", arr[i]);
+		printf("%02hhx\n ", array[i]);
 	}
 	return (0);
 }
