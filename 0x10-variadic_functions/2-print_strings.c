@@ -17,7 +17,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		ptr = va_arg(vList, char *);
 
-		if (ptr)
+		if (ptr != NULL)
 			printf("%s", ptr);
 
 		else
@@ -25,7 +25,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 		if (indx < n -1)
 		{
-			if (separator)
+			if (separator != NULL)
 				printf("%s", separator);
 		}
 	}
