@@ -10,9 +10,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_list vList;
 	unsigned int indx;
 
-	va_start(vList , n);
+	va_start(vList, n);
 
-	for (indx = 0; indx < n: indx++)
+	for (indx = 0; indx < n; indx++)
 	{
 		printf("%d", va_arg(vList, int));
 		if (separator != 0 && indx < n-1)
@@ -20,5 +20,5 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	}
 	printf("\n");
 
-	va_end(vList)
+	va_end(vList);
 }
