@@ -29,7 +29,7 @@ int main(int argc, char **argv)
 	}
 
 	opr = *argv[2];
-	if (m == 0 && (opr =='/' || opr == '%'))
+	if (m == 0 && (opr == '/' || opr == '%'))
 	{
 		printf("Error\n");
 		exit(100);
