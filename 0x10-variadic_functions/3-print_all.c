@@ -23,7 +23,7 @@ void print_all(const char * const format, ...)
 				break;
 			}
 			n++;
-		}
+		
 		switch (format[indx])
 		{
 		case 'c':
@@ -48,6 +48,7 @@ void print_all(const char * const format, ...)
 			}
 			printf("%s", ptr);
 			break;
+		}
 		}
 		indx++;
 	}
