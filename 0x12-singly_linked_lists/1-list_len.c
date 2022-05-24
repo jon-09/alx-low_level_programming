@@ -6,13 +6,11 @@
  */
 size_t list_len(const list_t *h)
 {
-	size_t itm;
+	if (h == NULL)
+		return (0);
 
-	itm = 0;
-	while (h != NULL)
-	{
-		h = h->next;
-		itm++;
-	}
-	return (itm);
+	if (h->next == NULL)
+		return (0);
+	
+	return (list_len(h->next) + 1);
 }
