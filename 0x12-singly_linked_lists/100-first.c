@@ -1,9 +1,6 @@
 #include "lists.l"
-/**
- * bmain - function runs before main
- * Return: void
- */
-void bmain(void) __attribute__((constructor));
+
+void bmain(void) __attribute__ ((constructor));
 /**
  * bmain - function runs before main
  * Return: void
