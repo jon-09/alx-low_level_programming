@@ -1,11 +1,9 @@
-#include "lists.l"
+#include "lists.h"
 
-void bmain(void) __attribute__ ((constructor));
 /**
- * bmain - function runs before main
- * Return: void
+ * _constructor - function runs first
  */
-void bmain(void)
+void __attribute__((constructor)) _constructor()
 {
 	printf("You're beat! and yet, you must allow,\n");
 	printf("I bore my house upon my back!\n");
