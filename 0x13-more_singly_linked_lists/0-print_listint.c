@@ -1,4 +1,5 @@
 #include "lists.h"
+
 /**
  * print_listint - function printd all the elemnts of a listint list
  * @h: pointer to the list
@@ -15,5 +16,6 @@ size_t print_listint(const listint_t *h)
 		count += 1;
 		curNode = curNode->next;
 	}
+
 	return (count);
 }
