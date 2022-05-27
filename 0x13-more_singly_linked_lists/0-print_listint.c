@@ -12,9 +12,9 @@ size_t print_listint(const listint_t *h)
 
 	while (curNode != NULL)
 	{
-		printf("%d\n", curNode->data);
+		printf("%d\n", curNode->n);
 		count += 1;
-		curNode = curNode->Nxtnde;
+		curNode = curNode->next;
 	}
 	return (count);
 }
