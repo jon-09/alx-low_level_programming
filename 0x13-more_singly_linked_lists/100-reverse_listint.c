@@ -15,9 +15,9 @@ listint_t *reverse_listint(listint_t **head)
 	while ((*head) != NULL)
 	{
 		Nnod = (*head)->next;
-		Pnod = (*head)->next;
-		Pnod =(*head);
-		Nnod = (*head);
+		(*head)->next = Pnod;
+		Pnod = (*head);
+		(*head) = Nnod;
 	}
 	Pnod = (*head);
 	return (Pnod);
