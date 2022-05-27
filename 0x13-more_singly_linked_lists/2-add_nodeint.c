@@ -5,7 +5,7 @@
  * @n: integer input to be added
  * Return: pointer to the added node
  */
-istint_t *add_nodeint(listint_t **head, const int n)
+listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *Nnode;
 
