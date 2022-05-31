@@ -10,11 +10,11 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	int x, count = 0;
 
-	unsignde long int xor = n ^ m;
+	unsigned long int xor = n ^ m;
 
-	for (x = 63; i >= 0; i--)
+	for (x = 63; x >= 0; x--)
 	{
-		if ((xor >> i) & 1)
+		if ((xor >> x) & 1)
 			count++;
 
 	}
