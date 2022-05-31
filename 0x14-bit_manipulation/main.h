@@ -6,6 +6,6 @@
 
 int _putchar(char c);
 unsigned int binary_to_uint(const char *b);
-double pow(double x, double y);
+void print_binary(unsigned long int n);
 
 #endif
