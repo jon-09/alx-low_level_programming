@@ -12,24 +12,23 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (filename == NULL)
 		return (-1);
 
-	if (text_content == NULL)
-		return (-1);
-
 	/* file = open(filename, O_APPEND | O_RDWR, 0664); */
 	file = open(filename, O_WRONLY | O_APPEND, 0666);
 
 	if (file == -1)
 		return (-1);
 
-	i = 0;
-	while (text_content[i] == '\0')
-		i++;
+	if (text_content != NULL)
+	{
+		i = 0;
+		while (text_content[i] == '\0')
+			i++;
 
-	filWrite = write(file, text_content, i);
+		filWrite = write(file, text_content, i);
 
-
-	if (filWrite == -1)
-		return (-1);
+		if (filWrite == -1)
+			return (-1);
+	}
 
 	close(file);
 
