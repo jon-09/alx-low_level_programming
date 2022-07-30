@@ -1,53 +1,30 @@
 #include "hash_tables.h"
+
 /**
- * hash_table_get - set a node in array
- * @ht: hash table you want to add or update the key/value to
- * @key: key can not be an empty string
+ * hash_table_get - retrieves a value associated with a key.
+ * @ht: hash table from which value will be searched.
+ * @key: key to search for.
  *
- * Return: hash_table or NULL
-*/
+ * Return: value associated with the element, or NULL not be found.
+ */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-	unsigned long int new = key_index((unsigned char *)key, ht->size);
-	hash_node_t *temp = ht->array[new];
+	unsigned long int position;
+	hash_node_t *hash_node_list;
 
-	if (ht == NULL)
-		return (NULL);
-	if (key != NULL)
+	if (ht == NULL || key == NULL || *key == '\0')
 	{
-		if (ht->array[new] == NULL)
-			return (NULL);
-		if (check_get(ht, key))
+		return (NULL);
+	}
+	position = key_index((const unsigned char *)key, ht->size);
+	hash_node_list = ht->array[position];
+	while (hash_node_list != NULL)
+	{
+		if (strcmp(hash_node_list->key, key) == 0)
 		{
-			while (temp->key != key)
-				temp = temp->next;		
-			return (temp->value);
+			return (hash_node_list->value);
 		}
-		else
-			return ((ht->array[new])->value);
+		hash_node_list = hash_node_list->next;
 	}
 	return (NULL);
-}
-
-/**
- * check_get - check if the current linked ist is being overwirten
- * @ht: hash table
- * @key: key to be checked
- *
- * Return: 1 if same 0 if not
- */
-int check_get(const hash_table_t *ht, const char *key)
-{
-	hash_node_t *temp;
-	unsigned long int new;
-
-	new = key_index((unsigned char *)key, ht->size);
-	temp = ht->array[new];
-	while (temp != NULL)
-	{
-		if (strcmp(temp->key, key) == 0)
-			return (1);
-		temp = temp->next;
-	}
-	return (0);
 }
