@@ -1,11 +1,2 @@
-all: holberton.o main.o
-	gcc holberton.o main.o -o holberton
-
-holberton.o: holberton.c
-	gcc -c holberton.c
-
-main.o: main.c
-	gcc -c main.c
-
-clean:
-	rm *.o output
+all: main.c school.c
+	gcc mai.c school.c -o school
